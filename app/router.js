@@ -19,6 +19,8 @@ Router.map(function() {
   });
   this.route('about');
   this.route('gamelibrary');
+  this.route('spades');
+  this.route('solitaire');
 });
 
 export default Router;
