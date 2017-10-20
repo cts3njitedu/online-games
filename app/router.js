@@ -7,6 +7,18 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('greggame');
+
+  this.route('greggames', function() {
+    this.route('about');
+    this.route('gamelibrary');
+  });
+
+  this.route('gregames', function() {
+    this.route('gamelibrary');
+  });
+  this.route('about');
+  this.route('gamelibrary');
 });
 
 export default Router;
